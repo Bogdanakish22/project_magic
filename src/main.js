@@ -1,6 +1,7 @@
 import './style.css'
 import viteLogo from '/vite.svg'
 
+
 document.querySelector('#app').innerHTML = `
   <div>
     <a href="https://vite.dev" target="_blank">
