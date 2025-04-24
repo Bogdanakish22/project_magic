@@ -1,9 +1,9 @@
-@import "css/header.module.css";
 @import "css/container.module.css";
 @import "css/reset.module.css";
-@import "css/hero.module.css";
+@import "css/header.module.css";
+/* @import "css/hero.module.css"; */
 @import "css/birthday.module.css";
-@import "css/guess.module.css";
+/* @import "css/guess.module.css";
 @import "css/rps.module.css";
 @import "css/calculator.module.css";
 @import "css/timecalculator.module.css";
@@ -12,4 +12,4 @@
 @import "css/threenum.module.css";
 @import "css/team.module.css";
 @import "css/scientist.module.css";
-@import "css/footer.module.css";
+@import "css/footer.module.css"; */
