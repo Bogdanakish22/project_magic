@@ -1,0 +1,117 @@
+.birthday {
+    display: flex;
+        flex-direction: column;
+            align-items: center;
+}
+
+.main-title{
+    color: #000;
+    font-family: "Montserrat Alternates";
+    font-size: 20px;
+    font-weight: 400;
+    padding-top: 36px;
+    padding-bottom: 36px;
+}
+
+.title-birthday {
+    color: #000;
+    font-family: "Montserrat Alternates";
+    font-size: 14px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.birthday-input {
+    padding: 10px 30px 10px 10px;
+    gap: 10px;
+    width: 215px;
+    font-size: 12px;
+    height: 42px;
+    border-radius: 20px;
+    background: #D7D7D7;
+    border: none;
+    color: #7E7E7E;
+    font-family: "Montserrat Alternates";
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.box-input1 {
+    padding-right: 230px;
+}
+
+
+.birthday-text {
+    color: #039900;
+    text-align: right;
+    font-family: "Montserrat Alternates";
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.birthday-div {
+    padding-bottom: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+
+}
+
+.line-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.line {
+    width: 536px !important;
+    border: 0.5px solid #000000 !important;
+}
+
+@media screen and (min-width: 768px) {
+    
+    .main-title {
+            color: #000;
+            font-family: "Montserrat Alternates";
+            font-size: 22px;
+            font-weight: 400;
+            padding-top: 36px;
+            padding-bottom: 36px;
+        }
+    
+        .title-birthday {
+            color: #000;
+            font-family: "Montserrat Alternates";
+            font-size: 14px;
+            font-weight: 400;
+            display: flex;
+            justify-content: center;
+            padding-top: 25px;
+            padding-bottom: 46px;
+        }
+        .birthday-input {
+            height: 35px;
+            margin-right: 149px;
+        }
+        .birthday-div {
+            flex-direction: row;
+        }
+}
+
+
+@media screen and (min-width: 1200px) {
+    
+    .main-title{
+        font-size: 24px;
+    }
+    .title-birthday {
+        font-size: 16px;
+        padding-top: 36px;
+    }
+
+}
