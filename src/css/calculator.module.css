@@ -1,0 +1,107 @@
+.calculator-section{
+display: flex;
+flex-direction: column;
+    align-items: center;
+}
+
+.calculator-title{
+    color: #000;
+    font-family: "Montserrat Alternates";
+    font-size: 14px;
+    font-weight: 400;
+    padding-top: 36px;
+    padding-bottom: 36px;
+}
+
+.calculator-main-box{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.calculator-input{
+    width: 105px;
+    padding: 10px 2px;
+    gap: 10px;
+    border-radius: 20px;
+    background: #D7D7D7;
+    box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+    border: none;
+    display: flex;
+
+    color: #7E7E7E;
+    font-family: "Montserrat Alternates";
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.calculator-box{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.calculator-btn{
+    border-radius: 20px;
+    background: #000;
+    box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+    border: none;
+    padding: 5px 10px;
+
+    color: #FFF;
+    font-family: "Montserrat Alternates";
+    font-size: 12px;
+    font-weight: 400;
+    margin: 10px;
+
+}
+
+@media screen and (min-width: 768px) {
+    .calculator-title {
+        font-size: 18px;
+        display: flex;
+    }
+    .calculator-input {
+            width: 135px;
+            padding-left: 19px;
+    }
+    .calculator-section {
+        display: flex;
+    }
+
+    .calculator-main-box{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .calculator-box {
+        width: 100px;
+    }
+    .line {
+        width: 550px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .calculator-title {
+        font-size: 16px;
+    }
+
+    .calculator-input {
+        width: 135px;
+        padding-left: 19px;
+    }
+
+    .calculator-section {
+        display: flex;
+    }
+
+    .calculator-main-box {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .calculator-box {
+        width: 100px;
+    }
+}
