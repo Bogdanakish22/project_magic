@@ -3,7 +3,7 @@ import { createHtmlPlugin } from 'vite-plugin-html'
 import fs from 'fs' // нет необходимости указывать 'node:fs'
 
 export default defineConfig({
-  base: '/coding-magia/',
+  base: '/project_magic/',
   plugins: [
     createHtmlPlugin({
       minify: false,

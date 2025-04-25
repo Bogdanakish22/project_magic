@@ -1,17 +1,26 @@
-<section class="birthday-check">
+<section class="birthday container">
   <h1 class="main-title">Популярні інетрактивні ігри</h1>
-  <hr class="line" />
-
-  <h3 class="birthday-check-title">Перевір в який рік ти народився</h3>
-  <input
-    class="birthday-check-input"
-    type="number"
-    id="yearInput"
-    placeholder="Введіть рік народження"
-  />
-  <button id="checkYearBtn" class="birthday-btn b-day-btn">
-    <img src="/svg/surch.svg" class="search-btn" alt="search" />
-  </button>
-  <p class="birthday-text" id="yearResult"></p>
-  <hr class="line" />
+  <div class="line-box">
+    <hr class="line" />
+  </div>
+  <h2 class="title-birthday">Перевір в який рік ти народився</h2>
+  <div class="birthday-div">
+    <div class="box-input">
+      <input
+        class="birthday-input"
+        type="number"
+        id="yearInput"
+        placeholder="Введіть рік народження"
+      />
+      <!-- <button id="checkYearBtn" class="birthday-btn random-btn b-day-btn">
+        <svg>
+          <use class="search-btn" href="/svg/surch.svg"></use>
+        </svg>
+      </button> -->
+    </div>
+    <p class="birthday-text" id="yearResult">Ви народилися у високосний рік!</p>
+  </div>
+  <div class="line-box">
+    <hr class="line" />
+  </div>
 </section>
