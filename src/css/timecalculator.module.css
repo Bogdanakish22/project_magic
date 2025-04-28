@@ -34,8 +34,24 @@
     margin-right: 30px;
 }
 
+.time-calculator-btn {
+  border-radius: 0px 20px 20px 0px;
+  background: #000;
+  border: none;
+  padding: 10px;
+  gap: 10px;
+  margin-left: -60px;
+  height: 34px;
+  margin-right: 40px;
+}
+
+.search-btn {
+  width: 15px;
+  fill: white;
+}
+
 .time-calculator-p{
-    margin-right: 30px;
+    margin-right: 40px;
 }
 
 .time-calculator-result{
@@ -49,10 +65,13 @@
   .time-calculator-title {
     font-size: 15px;
   }
-  .time-calculator-input {
-    margin-right: 140px;
+
+  .time-calculator-p {
+      margin-right: 100px;
   }
-    .time-calculator-p {
-      margin-right: 140px;
-    }
+
+  .time-calculator-btn{
+        margin-left: -60px;
+        margin-right: 110px;
+  }
 }
