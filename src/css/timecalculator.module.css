@@ -1,3 +1,58 @@
-.section {
-  color: black;
+.time-calculator{
+  display: flex;
+      flex-direction: column;
+        align-items: center;
+}
+
+.time-calculator-title{
+  color: #000;
+    font-family: "Montserrat Alternates";
+    font-size: 14px;
+    font-weight: 400;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.time-calculator-box{
+    display: flex;
+    align-items: center;
+    margin-bottom: 46px;
+}
+
+.time-calculator-input{
+    padding: 10px 45px 10px 10px;
+    gap: 10px;
+    border-radius: 20px;
+    background: #D7D7D7;
+    width: 150px;
+    border: none;
+
+    color: #7E7E7E;
+    font-family: "Montserrat Alternates";
+    font-size: 12px;
+    font-weight: 400;
+    margin-right: 30px;
+}
+
+.time-calculator-p{
+    margin-right: 30px;
+}
+
+.time-calculator-result{
+    color: #000;
+    font-family: "Montserrat Alternates";
+    font-size: 12px;
+    font-weight: 400;
+}
+
+@media screen and (min-width: 768px) {
+  .time-calculator-title {
+    font-size: 15px;
+  }
+  .time-calculator-input {
+    margin-right: 140px;
+  }
+    .time-calculator-p {
+      margin-right: 140px;
+    }
 }
