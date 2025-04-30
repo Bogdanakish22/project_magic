@@ -1,10 +1,31 @@
-import { defineConfig } from 'vite'
-import { createHtmlPlugin } from 'vite-plugin-html'
-import fs from 'fs' // нет необходимости указывать 'node:fs'
+import { defineConfig } from 'vite';
+import { createHtmlPlugin } from 'vite-plugin-html';
+import svgSpritePlugin from 'vite-plugin-svg-sprite'; // <--- додано
+import fs from 'fs';
 
 export default defineConfig({
   base: '/project_magic/',
   plugins: [
+    svgSpritePlugin({
+      include: [
+  'src/svg/bye.svg',
+  'src/svg/dilutu.svg',
+  'src/svg/dorivnue.svg',
+  'src/svg/logo.svg',
+  'src/svg/maks-gandon.svg',
+  'src/svg/mal.svg',
+  'src/svg/minus.svg',
+  'src/svg/moon.svg',
+  'src/svg/paper.svg',
+  'src/svg/plus.svg',
+  'src/svg/scissors.svg',
+  'src/svg/stone.svg',
+  'src/svg/sun000.svg',
+  'src/svg/surch.svg'
+],
+symbolId: '#'
+
+    }),
     createHtmlPlugin({
       minify: false,
       inject: {
@@ -31,4 +52,4 @@ export default defineConfig({
     outDir: '../dist',
     emptyOutDir: true
   }
-})
+});
