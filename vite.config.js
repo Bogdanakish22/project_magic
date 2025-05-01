@@ -12,7 +12,7 @@ export default defineConfig({
   'src/svg/dilutu.svg',
   'src/svg/dorivnue.svg',
   'src/svg/logo.svg',
-  'src/svg/maks-gandon.svg',
+  'src/svg/vnis.svg',
   'src/svg/mal.svg',
   'src/svg/minus.svg',
   'src/svg/moon.svg',
@@ -20,10 +20,14 @@ export default defineConfig({
   'src/svg/plus.svg',
   'src/svg/scissors.svg',
   'src/svg/stone.svg',
-  'src/svg/sun000.svg',
-  'src/svg/surch.svg'
+  'src/svg/sun.svg',
+  'src/svg/surch.svg',
+  "src/svg/menu.svg"
+  
 ],
-symbolId: '#'
+      symbolId: 'icon-[name]'
+                
+
 
     }),
     createHtmlPlugin({
