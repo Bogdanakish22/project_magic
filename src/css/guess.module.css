@@ -1,0 +1,78 @@
+.guess-number {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title-guess {
+  color: #000;
+  font-family: "Montserrat Alternates";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.guess-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.boxed-input {
+}
+.guess-input {
+  padding: 10px 30px 10px 10px;
+  gap: 10px;
+  width: 215px;
+  height: 42px;
+  border-radius: 20px;
+  background: #d7d7d7;
+  border: none;
+  color: #7e7e7e;
+  font-family: Montserrat Alternates;
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.text-guess {
+  color: #039900;
+  text-align: right;
+  font-family: "Montserrat Alternates";
+  font-size: 12px;
+  font-weight: 400;
+}
+.line-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 45px;
+}
+.line {
+  width: 320px;
+  border: 0.5px solid #000000 !important;
+}
+@media screen and (min-width: 768px) {
+  .title-guess {
+    font-size: 14px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .guess-input {
+    height: 35px;
+    margin-right: 105px;
+  }
+  .guess-div {
+    flex-direction: row;
+  }
+  .line {
+    width: 550px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .title-birthday {
+    font-size: 16px;
+    padding-top: 36px;
+  }
+}
