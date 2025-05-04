@@ -11,8 +11,8 @@
       rel="stylesheet"
     />
     <title>Vite App</title>
-    <script type="module" crossorigin src="/project_magic/assets/index-D48R6dHq.js"></script>
-    <link rel="stylesheet" crossorigin href="/project_magic/assets/index-DY-LGMmQ.css">
+    <script type="module" crossorigin src="/project_magic/assets/index-VlNX-P7p.js"></script>
+    <link rel="stylesheet" crossorigin href="/project_magic/assets/index-C13ls-u9.css">
   </head>
   <body>
     <header class="header container">
@@ -124,31 +124,37 @@
     <h2 class="title-rps">Камінь - ножиці - папір</h2>
   
     <div class="choices-rps">
-      <div class="rps-icon" onclick="play('камінь')">
+      <div class="rps-icon">
         <img src="rock.svg" alt="Камінь" />
       </div>
-      <div class="rps-icon" onclick="play('ножиці')">
+      <div class="rps-icon">
         <img src="scissors.svg" alt="Ножиці" />
       </div>
-      <div class="rps-icon" onclick="play('папір')">
+      <div class="rps-icon">
         <img src="paper.svg" alt="Папір" />
       </div>
     </div>
   
-    <p class="result-text" id="result"></p>
+    
   
-    <button class="rps-button" onclick="computerTurn()">Варіант комп’ютера</button>
+    <div class="rps-container">
+      <div class="score" id="score">
+        <p >Рахунок:</p>
+        <p>Комп’ютер - 0</p>
+        <p>Ви - 0</p>
+      </div>
+
+      <div class="choices-rps">...</div>
+    
+      
+    </div>
+
+    <p class="result-text" id="result"></p>
+
+    <button class="rps-button" >Варіант комп’ютера</button>
   
 
-    <div class="rps-container">
-        <div class="choices-rps">...</div>
-      
-        <div class="score" id="score">
-          <p >Рахунок:</p>
-          <p>Комп’ютер - 0</p>
-          <p>Ви - 0</p>
-        </div>
-      </div>
+    
   
     <hr class="line" />
   </section>
