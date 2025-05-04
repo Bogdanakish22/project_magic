@@ -268,3 +268,55 @@ input:checked + .slider-icon .moon {
     font-size: 16px;
   }
 }
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  border: 1px solid #000;
+  border-top: none;
+  border-radius: 0 0 12px 12px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  min-width: 160px;
+  z-index: 100;
+  text-align: center;
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease, visibility 0.2s ease;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+
+.dropdown-menu li {
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown-menu li a {
+  display: block;
+  width: 100%;
+  padding: 14px 0;
+  text-decoration: none;
+  color: inherit;
+  background-color: white;
+  transition: background-color 0.2s ease;
+}
+
+.dropdown-menu li a:hover,
+.dropdown-menu li a.active {
+  background-color: #eaeaea;
+}
