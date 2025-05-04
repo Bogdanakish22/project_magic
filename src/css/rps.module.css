@@ -1,4 +1,4 @@
-.rpsMakson {
+/* .rpsMakson {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -18,7 +18,7 @@
     display: flex;
     gap: 20px;
     justify-content: center;
-    /* margin-bottom: 24px; */
+    margin-bottom: 24px; commented
   }
   
   .rps-icon {
@@ -71,9 +71,6 @@
   }
 
     .score {
-        position: absolute;
-        top: 475px;
-        right: 600px;
         text-align: left;
         font-size: 14px;
         line-height: 1.5;
@@ -85,4 +82,94 @@
         font-family: "Montserrat Alternates", sans-serif;
         font-size: 14px;
         font-weight: 400;
+      } */
+
+
+
+      .rpsMakson {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 20px;
+        max-width: 400px;
+        margin: 0 auto;
       }
+      
+      .title-rps {
+        margin-bottom: 20px;
+        color: #000;
+        font-family: "Montserrat Alternates", sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        text-align: center;
+      }
+      
+      .choices-rps {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        margin-bottom: 16px;
+      }
+      
+      .rps-icon {
+        width: 72px;
+        height: 72px;
+        background-color: #000;
+        border-radius: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: transform 0.2s;
+      }
+      
+      .rps-icon:hover {
+        transform: scale(1.1);
+      }
+      
+      .rps-icon img {
+        width: 40px;
+        height: 40px;
+      }
+      
+      .result-text {
+        color: green;
+        font-size: 14px;
+        margin: 8px 0;
+        text-align: center;
+        min-height: 20px;
+      }
+      
+      .rps-button {
+        background-color: #000;
+        color: #fff;
+        border: none;
+        padding: 8px 16px;
+        border-radius: 16px;
+        cursor: pointer;
+        font-size: 14px;
+        margin: 12px 0;
+      }
+      
+      .rps-container {
+        width: 100%;
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .score {
+        text-align: center;
+        font-size: 14px;
+        line-height: 1.5;
+      }
+      
+      .score p {
+        margin: 0;
+        color: #000;
+        font-family: "Montserrat Alternates", sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+      }
+    
