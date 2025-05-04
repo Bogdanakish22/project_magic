@@ -50,3 +50,17 @@ saveBtn.addEventListener('click', () => {
     }
   });
   
+
+
+
+  document.querySelectorAll('.dropdown').forEach(drop => {
+    const menu = drop.querySelector('.dropdown-menu');
+  
+    menu.querySelectorAll('li').forEach(li => {
+      li.addEventListener('mouseenter', () => {
+        menu.querySelectorAll('li').forEach(item => item.classList.remove('active'));
+        li.classList.add('active');
+      });
+    });
+  });
+  
