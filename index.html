@@ -11,8 +11,8 @@
       rel="stylesheet"
     />
     <title>Vite App</title>
-    <script type="module" crossorigin src="/project_magic/assets/index-BRZx-HQ1.js"></script>
-    <link rel="stylesheet" crossorigin href="/project_magic/assets/index-DnjSF28o.css">
+    <script type="module" crossorigin src="/project_magic/assets/index-DvxcCMaB.js"></script>
+    <link rel="stylesheet" crossorigin href="/project_magic/assets/index-DOz8mkuX.css">
   </head>
   <body>
     <header class="header container">
@@ -97,13 +97,13 @@
         id="yearInput"
         placeholder="Введіть рік народження"
       />
-      <!-- <button id="checkYearBtn" class="birthday-btn random-btn b-day-btn">
-        <svg>
-          <use class="search-btn" href="/svg/surch.svg"></use>
+      <button id="checkYearBtn" class="birthday-btn random-btn b-day-btn">
+        <svg class="search-btn" width="15px" height="15px">
+          <use href="/project_magic/assets/symbol-defs-Dk_vW9C0.svg#surch"></use>
         </svg>
-      </button> -->
+      </button>
     </div>
-    <p class="birthday-text" id="yearResult">Ви народилися у високосний рік!</p>
+    <div class="result-birthday" id="resultText"></div>
   </div>
   <div class="line-box">
     <hr class="line" />
@@ -119,8 +119,13 @@
         id="randomNum"
         placeholder="Введіть число"
       />
+      <button id="checkBtn" class="guess-btn">
+        <svg class="search-btn" width="15px" height="15px">
+          <use href="/project_magic/assets/symbol-defs-Dk_vW9C0.svg#surch"></use>
+        </svg>
+      </button>
     </div>
-    <p class="text-guess" id="numText">Вітаю, ви вгадали число! (number)</p>
+    <div class="result-birthday" id="guessText"></div>
   </div>
   <div class="line-div"><hr class="line" /></div>
 </section>
