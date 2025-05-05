@@ -81,6 +81,12 @@
   cursor: pointer;
 }
 
+.burger div {
+  width: 100%;
+}
+
+
+
 .menu-links {
   list-style: none;
   padding: 20px 0;
@@ -204,7 +210,8 @@
 }
 
 input:checked + .slider-icon {
-  background-color: #333;
+  /* background-color: #333; */
+  background-color: #5f5b5b;
 }
 
 input:checked + .slider-icon .sun {
@@ -213,6 +220,25 @@ input:checked + .slider-icon .sun {
 
 input:checked + .slider-icon .moon {
   opacity: 1;
+}
+
+.icon-sunmoon {
+  width: 20px;
+  height: 20px;
+}
+
+.slider-icon span svg {
+  width: 20px;
+  height: 20px;
+}
+
+li{
+  color: #000;
+font-family: "Montserrat Alternates";
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
 }
 
 /* switchh           */
