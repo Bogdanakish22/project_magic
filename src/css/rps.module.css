@@ -127,9 +127,15 @@
         transform: scale(1.1);
       }
       
-      .rps-icon img {
+      .rps-icon svg{
         width: 40px;
         height: 40px;
+        fill: white;
+      }
+
+      .rps-icon svg use {
+        color: white;  
+        fill: white;
       }
       
       .result-text {
