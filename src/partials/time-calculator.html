@@ -3,11 +3,19 @@
   <div class="time-calculator-box">
     <input
       class="time-calculator-input"
+      id="time-calculator-input"
       type="text"
       placeholder="Введіть число"
     />
+    <button id="checkYearBtn" class="time-btn">
+      <svg class="search-btn" width="15px" height="15px">
+        <use href="/svg/symbol-defs.svg#surch"></use>
+      </svg>
+    </button>
     <p class="time-calculator-p">----------------</p>
-    <p class="time-calculator-result">3 дн. 15:45:01</p>
+    <div class="dots-result-box">
+      <span id="time-calculator-result">...</span>
+    </div>
   </div>
   <div class="line-box">
     <hr class="line" />
