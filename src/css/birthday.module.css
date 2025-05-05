@@ -7,10 +7,9 @@
 .main-title{
     color: #000;
     font-family: "Montserrat Alternates";
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
     padding-top: 36px;
-    padding-bottom: 36px;
 }
 
 .title-birthday {
@@ -54,7 +53,6 @@
 }
 
 .birthday-div {
-    padding-bottom: 36px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -66,33 +64,24 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 45px;
 }
 
 .line {
-    width: 536px !important;
+    width: 320px;
     border: 0.5px solid #000000 !important;
 }
 
 @media screen and (min-width: 768px) {
     
     .main-title {
-            color: #000;
-            font-family: "Montserrat Alternates";
             font-size: 22px;
-            font-weight: 400;
-            padding-top: 36px;
-            padding-bottom: 36px;
         }
     
         .title-birthday {
-            color: #000;
-            font-family: "Montserrat Alternates";
             font-size: 14px;
-            font-weight: 400;
-            display: flex;
-            justify-content: center;
-            padding-top: 25px;
-            padding-bottom: 46px;
+            padding-top: 30px;
+            padding-bottom: 30px;
         }
         .birthday-input {
             height: 35px;
@@ -100,6 +89,9 @@
         }
         .birthday-div {
             flex-direction: row;
+        }
+        .line {
+            width: 550px;
         }
 }
 

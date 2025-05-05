@@ -1,9 +1,40 @@
 <header class="header container">
-  <div class="logo">
-    <span>&lt;/&gt;</span>
-    <span class="logo-text">Coding Magic</span>
+  <div class="left-section">
+    <div class="logo">
+      <svg>
+        <use href="./svg/symbol-defs.svg#logo"></use>
+      </svg>
+    </div>
   </div>
+
+  <ul class="menu-links desktop-nav">
+    <li class="dropdown">
+      <span class="dropdown-toggle">Інтерактив</span>
+      <ul class="dropdown-menu">
+        <li><a href="#">Числовий</a></li>
+        <li><a href="#">Графічний</a></li>
+        <li><a href="#">Ознайомчий</a></li>
+      </ul>
+    </li>
+    <li>Наша Команда</li>
+    <li>Контакти</li>
+  </ul>
+
+  <label class="switch-icon">
+    <input type="checkbox" id="themeToggle">
+    <span class="slider-icon">
+      <span class="icon sun"><svg>
+        <use class="icon-sunmoon" href="./svg/symbol-defs.svg#sun"></use>
+      </svg></span>
+      <span class="icon moon"><svg>
+        <use class="icon-sunmoon" href="./svg/symbol-defs.svg#moon"></use>
+      </svg></span>
+    </span>
+  </label>
+
+
   <button class="greeting-btn">Вітаю, User!</button>
+
   <div class="burger" id="burger">
     <div></div>
     <div></div>
@@ -13,7 +44,7 @@
 
 <nav class="side-menu" id="sideMenu">
   <button class="close-btn" id="closeBtn">&times;</button>
-  <ul class="menu-links">
+  <ul class="menu-links mobile-nav">
     <li>Інтерактив</li>
     <li>Наша Команда</li>
     <li>Контакти</li>
@@ -29,18 +60,10 @@
   </div>
 </nav>
 
-<!-- <div class="modal" id="nameModal">
+<div class="modal" id="nameModal">
   <div class="modal-content">
     <h2>Введіть ваше ім’я</h2>
     <input type="text" id="nameInput" placeholder="Ваше ім’я" />
     <button id="saveNameBtn">Зберегти</button>
   </div>
-</div> -->
-
-<!-- <label class="switch-icon">
-  <input type="checkbox" id="themeToggle" />
-  <span class="slider-icon">
-    <span class="icon sun">#</span>
-    <span class="icon moon">#</span>
-  </span>
-</label> -->
+</div>
