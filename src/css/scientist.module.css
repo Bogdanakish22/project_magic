@@ -1,0 +1,130 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  max-width: 550px;
+  margin: 0 auto 30px;
+}
+.grid1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto 30px;
+}
+
+.card {
+  background-color: #ddd;
+  border-radius: 20px;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  user-select: none;
+  color: #000;
+  text-align: center;
+  font-family: "Montserrat Alternates";
+  font-size: 8px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 170%; /* 13.6px */
+}
+
+.card:hover {
+  background-color: #ccc;
+}
+
+.correct {
+  background-color: #4caf50 !important;
+  color: white;
+}
+
+.wrong {
+  background-color: #f44336 !important;
+  color: white;
+}
+
+.selected {
+  border: 2px solid #2196f3;
+}
+
+.fact {
+  background-color: #000;
+  color: #fff;
+  border-radius: 30px;
+  padding: 10px 20px;
+  min-width: 220px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #fff;
+  text-align: right;
+  font-family: "Montserrat Alternates";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.fact:hover {
+  background-color: #222;
+}
+.scientist__title {
+  color: #000;
+  font-family: "Montserrat Alternates";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+  margin-bottom: 36px;
+  margin-top: 36px;
+}
+@media (max-width: 768px) {
+  .card {
+    width: 80px;
+    height: 80px;
+    font-size: 12px;
+  }
+
+  .fact {
+    min-width: 180px;
+    font-size: 11px;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .grid {
+    gap: 10px;
+  }
+
+  .card {
+    width: 70px;
+    height: 70px;
+    font-size: 11px;
+  }
+
+  .fact {
+    min-width: 160px;
+    font-size: 12px;
+    padding: 6px 14px;
+  }
+}
