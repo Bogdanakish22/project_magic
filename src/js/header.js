@@ -28,6 +28,11 @@ window.addEventListener('DOMContentLoaded', () => {
   }
 });
 
+document.getElementById("closeGreeting").addEventListener("click", function () {
+  document.getElementById("nameModal").style.display = "none";
+});
+
+
 
 saveBtn.addEventListener('click', () => {
     const name = nameInput.value.trim();
@@ -64,3 +69,4 @@ saveBtn.addEventListener('click', () => {
     });
   });
   
+
