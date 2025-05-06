@@ -73,13 +73,25 @@
   right: 0;
 }
 
+
 .close-btn {
   background: none;
   border: none;
   font-size: 28px;
   float: right;
   cursor: pointer;
+  color: #000;
+  font-family: Arial, sans-serif;
+  font-weight: 300;
+  line-height: 1;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 16px;
+  right: 20px;
 }
+
+
 
 .menu-links {
   list-style: none;
@@ -201,6 +213,7 @@
 
 .moon {
   opacity: 0;
+  fill: white;
 }
 
 input:checked + .slider-icon {
@@ -339,4 +352,118 @@ line-height: normal;
 .dropdown-menu li a:hover,
 .dropdown-menu li a.active {
   background-color: #eaeaea;
+}
+
+
+
+
+
+
+.modal-content.greeting {
+  background: white;
+  padding: 30px 20px;
+  border-radius: 16px;
+  height: 316px;
+  max-width: 576px;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  box-shadow: none;
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.modal-content.greeting .greeting-close {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 28px;
+  color: #000;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+  font-weight: 300;
+}
+
+
+.modal-content.greeting h3 {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.greeting-text {
+  font-size: 14px;
+  line-height: 1.4;
+  margin-bottom: 20px;
+  color: #000;
+  font-weight: 300;
+}
+
+.modal-content.greeting input {
+  width: 169px;
+  padding: 10px 14px;
+  border-radius: 16px;
+  border: none;
+  background: #D7D7D7;
+  font-size: 14px;
+  margin-bottom: 12px;
+  outline: none;
+  font-weight: 300;
+}
+
+.modal-content.greeting button#saveNameBtn {
+  display: block;
+  margin: 0 auto;
+  padding: 8px 24px;
+  border: none;
+  background: #000;
+  color: #fff;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: none; 
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+  font-weight: 400;
+}
+
+.modal-content.greeting button#saveNameBtn:hover {
+  background: #333;
+}
+
+
+.burger {
+  display: none;  
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.burger div {
+  height: 4px;
+  background-color: black;
+  border-radius: 2px;
+  width: 100%;
+}
+
+@media (max-width: 768px) { 
+  .burger {
+    display: flex;
+  }
+}
+
+.burger.hide {
+  display: none;
+}
+
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
