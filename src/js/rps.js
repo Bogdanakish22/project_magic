@@ -1,67 +1,58 @@
-import "../css/rps.module.css";
+   const options = ["камiнь", "папiр", "ножицi"];
+  const icons = document.querySelectorAll(".rps-icon");
+  const resultText = document.getElementById("result");
+  const scoreContainer = document.getElementById("score");
+  const button = document.querySelector(".rps-button");
 
-const choices = ['камінь', 'ножиці', 'папір'];
-let userScore = 0;
-let computerScore = 0;
+  let userScore = 0;
+  let computerScore = 0;
+  let userChoice = '';
 
-function play(userChoice) {
-  const computerChoice = choices[Math.floor(Math.random() * choices.length)];
-  showComputerChoice(computerChoice);
-
-  let result = '';
-  if (userChoice === computerChoice) {
-    result = 'Нічия!';
-  } else if (
-    (userChoice === 'камінь' && computerChoice === 'ножиці') ||
-    (userChoice === 'ножиці' && computerChoice === 'папір') ||
-    (userChoice === 'папір' && computerChoice === 'камінь')
-  ) {
-    userScore++;
-    result = 'Ви виграли раунд!';
-  } else {
-    computerScore++;
-    result = 'Комп’ютер виграв раунд!';
+  function getComputerChoice() {
+    const randomIndex = Math.floor(Math.random() * options.length);
+    return options[randomIndex];
   }
 
-  document.getElementById('result').textContent = result;
-  updateScore();
-}
+  function determineWinner(user, computer) {
+    if (user === computer) return "Нічия!";
+    if (
+      (user === "камiнь" && computer === "ножицi") ||
+      (user === "папiр" && computer === "камiнь") ||
+      (user === "ножицi" && computer === "папiр")
+    ) {
+      userScore++;
+      return "Ви виграли!";
+    } else {
+      computerScore++;
+      return "Комп’ютер виграв!";
+    }
+  }
+  
 
-function updateScore() {
-  document.getElementById('score').innerHTML = `
-    <p>Рахунок:</p>
-    <p>Комп’ютер - ${computerScore}</p>
-    <p>Ви - ${userScore}</p>
-  `;
-}
-
-
-function showComputerChoice(choice) {
-  const iconMap = {
-    'камінь': 'rock.svg',
-    'ножиці': 'scissors.svg',
-    'папір': 'paper.svg',
-  };
-
-  document.getElementById('computer-choice').innerHTML = `
-    <div class="rps-icon">
-      <img src="${iconMap[choice]}" alt="${choice}" />
-    </div>
-  `;
-}
+  function updateScore() {
+    scoreContainer.innerHTML = `
+      <p>Рахунок:</p>
+      <p>Комп’ютер - ${computerScore}</p>
+      <p>Ви - ${userScore}</p>
+    `;
+  }
 
 
-function computerTurn() {
-  const randomChoice = choices[Math.floor(Math.random() * choices.length)];
-  play(randomChoice);
-}
-
-
-document.querySelectorAll('.rps-icon[data-choice]').forEach(el => {
-  el.addEventListener('click', () => {
-    const choice = el.dataset.choice;
-    play(choice);
+  icons.forEach((icon, index) => {
+    icon.addEventListener("click", () => {
+      userChoice = options[index];
+      resultText.textContent = "Вибрано: " + userChoice;
+    });
   });
-});
 
-document.getElementById('computer-btn').addEventListener('click', computerTurn);
+  button.addEventListener("click", () => {
+    if (!userChoice) {
+      resultText.textContent = "Спочатку зробіть вибір!";
+      return;
+    }
+    const computerChoice = getComputerChoice();
+    const result = determineWinner(userChoice, computerChoice);
+    resultText.textContent = `Ваш вибір: ${userChoice}, Комп’ютер: ${computerChoice}. ${result}`;
+    updateScore();
+    userChoice = '';
+  });
