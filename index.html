@@ -11,8 +11,8 @@
       rel="stylesheet"
     />
     <title>Vite App</title>
-    <script type="module" crossorigin src="/project_magic/assets/index-CG1qCt7B.js"></script>
-    <link rel="stylesheet" crossorigin href="/project_magic/assets/index-C2huj_j2.css">
+    <script type="module" crossorigin src="/project_magic/assets/index-I-lCU7Xz.js"></script>
+    <link rel="stylesheet" crossorigin href="/project_magic/assets/index-DftR_CpM.css">
   </head>
   <body>
     <header class="header container">
@@ -38,17 +38,21 @@
   </ul>
 
   <label class="switch-icon">
-    <input type="checkbox" id="themeToggle">
+    <input type="checkbox" id="themeToggle" />
     <span class="slider-icon">
-      <span class="icon sun"><svg>
-        <use class="icon-sunmoon" href="/project_magic/assets/symbol-defs-Dk_vW9C0.svg#sun"></use>
-      </svg></span>
-      <span class="icon moon"><svg>
-        <use class="icon-sunmoon" href="/project_magic/assets/symbol-defs-Dk_vW9C0.svg#moon"></use>
-      </svg></span>
+      <span class="icon sun"
+        ><svg>
+          <use class="icon-sunmoon" href="/project_magic/assets/symbol-defs-Dk_vW9C0.svg#sun"></use></svg
+      ></span>
+      <span class="icon moon"
+        ><svg>
+          <use
+            class="icon-sunmoon"
+            href="/project_magic/assets/symbol-defs-Dk_vW9C0.svg#moon"
+          ></use></svg
+      ></span>
     </span>
   </label>
-
 
   <button class="greeting-btn">Вітаю, User!</button>
 
@@ -77,15 +81,19 @@
   </div>
 </nav>
 
-
-
 <div class="modal" id="nameModal">
-  <div class="modal-content greeting">
-    <button class="close-btn greeting-close" id="closeGreeting" aria-label="Закрити модалку">×</button>
+  <div class="modal-content greeting container">
+    <button
+      class="close-btn greeting-close"
+      id="closeGreeting"
+      aria-label="Закрити модалку"
+    >
+      ×
+    </button>
     <p class="greeting-text">
-      Привіт!<br>
-      Ви потрапили на сайт інтерактивних ігор та завдань<br>
-      Сподіваємося, що вам сподобається і ви отримаєте позитивні емоції!<br>
+      Привіт!<br />
+      Ви потрапили на сайт інтерактивних ігор та завдань<br />
+      Сподіваємося, що вам сподобається і ви отримаєте позитивні емоції!<br />
       Бажаємо Вам гарно провести час!
     </p>
 
@@ -271,73 +279,219 @@
 
 
 
-</section> <!-- <section class="team">
-  <div id="carouselExampleDark" class="carousel carousel-dark slide">
-    <div class="carousel-indicators">
-      <button
-        type="button"
-        data-bs-target="#carouselExampleDark"
-        data-bs-slide-to="0"
-        class="active"
-        aria-current="true"
-        aria-label="Slide 1"
-      ></button>
-      <button
-        type="button"
-        data-bs-target="#carouselExampleDark"
-        data-bs-slide-to="1"
-        aria-label="Slide 2"
-      ></button>
-      <button
-        type="button"
-        data-bs-target="#carouselExampleDark"
-        data-bs-slide-to="2"
-        aria-label="Slide 3"
-      ></button>
+</section> <section class="team">
+  <style>
+    body {
+      font-family: sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      min-height: 100vh;
+      margin: 0;
+      background: #fff;
+    }
+
+    .slider-container {
+      text-align: center;
+      max-width: 600px;
+      position: relative;
+      padding: 20px;
+    }
+
+    .h2 {
+      margin-bottom: 20px;
+      color: #000;
+      font-family: "Montserrat Alternates";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+
+    .slider {
+      display: flex;
+      position: relative;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .arrow {
+      width: 30px;
+      border: solid #000;
+      border-width: 0 1.5px 1.5px 0;
+      padding: 30px;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+
+    .arrow.left {
+      transform: rotate(130deg);
+      margin-right: 200px;
+    }
+
+    .arrow.right {
+      transform: rotate(-40deg);
+      margin-left: 200px;
+    }
+
+    .slide {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+
+    .slide.active {
+      display: flex;
+    }
+
+    .avatar {
+      width: 150px;
+      height: 150px;
+      border-radius: 20px;
+      margin-bottom: 10px;
+    }
+    .ererer {
+      border-radius: 23px;
+    }
+    .name {
+      font-weight: bold;
+      color: #000;
+      font-family: "Montserrat Alternates";
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+
+    .description {
+      font-size: 0.9em;
+      color: #000;
+      font-family: "Montserrat Alternates";
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+
+    .dots {
+      margin-top: 20px;
+    }
+
+    .dot {
+      display: inline-block;
+      height: 4px;
+      width: 20px;
+      margin: 0 3px;
+      background-color: #ccc;
+      border-radius: 2px;
+      transition: background-color 0.3s;
+    }
+
+    .dot.active {
+      background-color: #444;
+    }
+  </style>
+  <body>
+    <div class="slider-container">
+      <h2 class="h2">Наша команда</h2>
+      <div class="slider">
+        <div class="arrow left" onclick="changeSlide(-1)"></div>
+
+        <div class="slide active">
+          <div class="avatar">
+            <img
+              class="ererer"
+              src="/project_magic/assets/i-photo-BTNSREB1.jpg"
+              alt="#"
+              width="150"
+              height="150"
+            />
+          </div>
+          <p class="name">Dana</p>
+          <p class="description">Team-leader,developer</p>
+        </div>
+
+        <div class="slide">
+          <div class="avatar">
+            <img
+              class="ererer"
+              src="/project_magic/assets/maxon-photo-B9dMon0C.jpg"
+              alt="#"
+              width="150"
+              height="150"
+            />
+          </div>
+          <p class="name">Maxon</p>
+          <p class="description">Scram, developer</p>
+        </div>
+
+        <div class="slide">
+          <div class="avatar">
+            <img
+              class="ererer"
+              src="/project_magic/assets/alina-photo-CKvJ4eJ-.jpg"
+              alt="#"
+              width="150"
+              height="150"
+            />
+          </div>
+          <p class="name">Alina</p>
+          <p class="description">Developer</p>
+        </div>
+
+        <div class="slide">
+          <div class="avatar">
+            <img
+              class="ererer"
+              src="/project_magic/assets/artem-photo-vYfAnJzw.jpg"
+              alt="#"
+              width="150"
+              height="150"
+            />
+          </div>
+          <p class="name">Artem</p>
+          <p class="description">Developer</p>
+        </div>
+
+        <div class="arrow right" onclick="changeSlide(1)"></div>
+      </div>
+
+      <div class="dots">
+        <span class="dot active" onclick="goToSlide(0)"></span>
+        <span class="dot" onclick="goToSlide(1)"></span>
+        <span class="dot" onclick="goToSlide(2)"></span>
+        <span class="dot" onclick="goToSlide(3)"></span>
+      </div>
     </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active" data-bs-interval="10000">
-        <img src="..." class="d-block w-100" alt="..." />
-        <div class="carousel-caption d-none d-md-block">
-          <h5>First slide label</h5>
-          <p>Some representative placeholder content for the first slide.</p>
-        </div>
-      </div>
-      <div class="carousel-item" data-bs-interval="2000">
-        <img src="..." class="d-block w-100" alt="..." />
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Second slide label</h5>
-          <p>Some representative placeholder content for the second slide.</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="..." class="d-block w-100" alt="..." />
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Third slide label</h5>
-          <p>Some representative placeholder content for the third slide.</p>
-        </div>
-      </div>
-    </div>
-    <button
-      class="carousel-control-prev"
-      type="button"
-      data-bs-target="#carouselExampleDark"
-      data-bs-slide="prev"
-    >
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button
-      class="carousel-control-next"
-      type="button"
-      data-bs-target="#carouselExampleDark"
-      data-bs-slide="next"
-    >
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-</section> -->
+    <hr class="line" />
+    <script>
+      let currentSlide = 0;
+      const slides = document.querySelectorAll(".slide");
+      const dots = document.querySelectorAll(".dot");
+
+      function showSlide(index) {
+        slides.forEach((slide, i) => {
+          slide.classList.toggle("active", i === index);
+          dots[i].classList.toggle("active", i === index);
+        });
+        currentSlide = index;
+      }
+
+      function changeSlide(direction) {
+        let newIndex =
+          (currentSlide + direction + slides.length) % slides.length;
+        showSlide(newIndex);
+      }
+
+      function goToSlide(index) {
+        showSlide(index);
+      }
+    </script>
+  </body>
+</section>
  <section class="scientist container">
   <h1 class="scientist__title">Обери вченого/утвердження</h1>
   <div class="grid" id="scientists"></div>
@@ -374,8 +528,6 @@
           class="input"
           placeholder="Ваша ел. адреса..."
         />
-      </div>
-      <div>
         <button type="button" class="btn-input">Підписатись</button>
       </div>
       <div>
