@@ -1,7 +1,8 @@
 import "../css/timecalculator.module.css";
 
+const input = document.getElementById("time-calculator-input");
+input.addEventListener("input", calculateTime)
 function calculateTime() {
-  const input = document.getElementById("time-calculator-input").value;
   const result = document.getElementById("time-calculator-result");
 
   if (input) {
