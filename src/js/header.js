@@ -70,3 +70,17 @@ saveBtn.addEventListener('click', () => {
   });
   
 
+
+
+
+
+  const themeToggle = document.getElementById('themeToggle');
+
+  themeToggle.addEventListener('change', () => {
+    document.body.classList.toggle('dark-theme', themeToggle.checked);
+  });
+  
+  window.addEventListener('DOMContentLoaded', () => {
+    themeToggle.checked = document.body.classList.contains('dark-theme');
+  });
+  
