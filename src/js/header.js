@@ -28,6 +28,11 @@ window.addEventListener('DOMContentLoaded', () => {
   }
 });
 
+document.getElementById("closeGreeting").addEventListener("click", function () {
+  document.getElementById("nameModal").style.display = "none";
+});
+
+
 
 saveBtn.addEventListener('click', () => {
     const name = nameInput.value.trim();
@@ -62,5 +67,20 @@ saveBtn.addEventListener('click', () => {
         li.classList.add('active');
       });
     });
+  });
+  
+
+
+
+
+
+  const themeToggle = document.getElementById('themeToggle');
+
+  themeToggle.addEventListener('change', () => {
+    document.body.classList.toggle('dark-theme', themeToggle.checked);
+  });
+  
+  window.addEventListener('DOMContentLoaded', () => {
+    themeToggle.checked = document.body.classList.contains('dark-theme');
   });
   
