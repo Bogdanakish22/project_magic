@@ -14,29 +14,37 @@
 @import "css/scientist.module.css";
 @import "css/footer.module.css";
 
+main {
+  /* background-color: #f3f3f3; */
+}
+body {
+  background-image: url(./img/body.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 
 
 :root {
-    --bg-color: #ffffff;
-    --text-color: #000000;
-    --card-bg: #f3f3f3;
-  }
-  
-  /* .dark-theme {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --card-bg: #f3f3f3;
+}
+
+/* .dark-theme {
     --bg-color: #121212;
     --text-color: #ffffff;
     --card-bg: #1e1e1e;
   } */
 
-  .dark-theme {
-    --bg-color: #414040;
-    --text-color: #ffffff;
-    --card-bg: #1e1e1e;
-  }
-  
-  body {
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    transition: background-color 0.3s ease, color 0.3s ease;
-  }
-  
+.dark-theme {
+  --bg-color: #414040;
+  --text-color: #ffffff;
+  --card-bg: #1e1e1e;
+}
+
+main {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
