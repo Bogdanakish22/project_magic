@@ -14,9 +14,9 @@
 @import "css/scientist.module.css";
 @import "css/footer.module.css";
 
-main {
-  /* background-color: #f3f3f3; */
-}
+ /* main {
+   background-color: #f3f3f3; 
+ }  */
 body {
   background-image: url(./img/body.jpg);
   background-repeat: no-repeat;
@@ -48,3 +48,15 @@ main {
   color: var(--text-color);
   transition: background-color 0.3s ease, color 0.3s ease;
 }
+
+
+body {
+      font-family: sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      min-height: 100vh;
+      margin: 0;
+      /* background-color: var(--bg-color); commented */
+    }

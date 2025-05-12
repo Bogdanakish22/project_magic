@@ -1,14 +1,15 @@
 <section class="team">
   <style>
-    body {
-      font-family: sans-serif;
+    .line-wrapper {
+      width: 100%;
       display: flex;
       justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      min-height: 100vh;
-      margin: 0;
-      /* background-color: var(--bg-color); */
+      margin-top: 40px;
+    }
+
+    .line {
+      width: 320px;
+      border: 0.5px solid #000000 !important;
     }
 
     .slider-container {
@@ -108,102 +109,108 @@
     .dot.active {
       background-color: #444;
     }
+
+    .line {
+      width: 320px;
+      border: 0.5px solid #000000 !important;
+      margin-top: 40px;
+    }
   </style>
-  <body>
-    <div class="slider-container">
-      <h2 class="h2">Наша команда</h2>
-      <div class="slider">
-        <div class="arrow left" onclick="changeSlide(-1)"></div>
+  <div class="slider-container">
+    <h2 class="h2">Наша команда</h2>
+    <div class="slider">
+      <div class="arrow left" onclick="changeSlide(-1)"></div>
 
-        <div class="slide active">
-          <div class="avatar">
-            <img
-              class="ererer"
-              src="./img/i-photo.jpg"
-              alt="#"
-              width="150"
-              height="150"
-            />
-          </div>
-          <p class="name">Dana</p>
-          <p class="description">Team-leader,developer</p>
+      <div class="slide active">
+        <div class="avatar">
+          <img
+            class="ererer"
+            src="./img/i-photo.jpg"
+            alt="#"
+            width="150"
+            height="150"
+          />
         </div>
-
-        <div class="slide">
-          <div class="avatar">
-            <img
-              class="ererer"
-              src="./img/maxon-photo.jpg"
-              alt="#"
-              width="150"
-              height="150"
-            />
-          </div>
-          <p class="name">Makson</p>
-          <p class="description">Scram, developer</p>
-        </div>
-
-        <div class="slide">
-          <div class="avatar">
-            <img
-              class="ererer"
-              src="./img/alina-photo.jpg"
-              alt="#"
-              width="150"
-              height="150"
-            />
-          </div>
-          <p class="name">Alina</p>
-          <p class="description">Developer</p>
-        </div>
-
-        <div class="slide">
-          <div class="avatar">
-            <img
-              class="ererer"
-              src="./img/artem-photo.jpg"
-              alt="#"
-              width="150"
-              height="150"
-            />
-          </div>
-          <p class="name">Artem</p>
-          <p class="description">Developer</p>
-        </div>
-
-        <div class="arrow right" onclick="changeSlide(1)"></div>
+        <p class="name">Dana</p>
+        <p class="description">Team-leader,developer</p>
       </div>
 
-      <div class="dots">
-        <span class="dot active" onclick="goToSlide(0)"></span>
-        <span class="dot" onclick="goToSlide(1)"></span>
-        <span class="dot" onclick="goToSlide(2)"></span>
-        <span class="dot" onclick="goToSlide(3)"></span>
+      <div class="slide">
+        <div class="avatar">
+          <img
+            class="ererer"
+            src="./img/maxon-photo.jpg"
+            alt="#"
+            width="150"
+            height="150"
+          />
+        </div>
+        <p class="name">Makson</p>
+        <p class="description">Scram, developer</p>
       </div>
+
+      <div class="slide">
+        <div class="avatar">
+          <img
+            class="ererer"
+            src="./img/alina-photo.jpg"
+            alt="#"
+            width="150"
+            height="150"
+          />
+        </div>
+        <p class="name">Alina</p>
+        <p class="description">Developer</p>
+      </div>
+
+      <div class="slide">
+        <div class="avatar">
+          <img
+            class="ererer"
+            src="./img/artem-photo.jpg"
+            alt="#"
+            width="150"
+            height="150"
+          />
+        </div>
+        <p class="name">Artem</p>
+        <p class="description">Developer</p>
+      </div>
+
+      <div class="arrow right" onclick="changeSlide(1)"></div>
+    </div>
+
+    <div class="dots">
+      <span class="dot active" onclick="goToSlide(0)"></span>
+      <span class="dot" onclick="goToSlide(1)"></span>
+      <span class="dot" onclick="goToSlide(2)"></span>
+      <span class="dot" onclick="goToSlide(3)"></span>
+    </div>
+    <!-- <hr class="line" /> -->
+    <div class="line-wrapper">
       <hr class="line" />
     </div>
-    <script>
-      let currentSlide = 0;
-      const slides = document.querySelectorAll(".slide");
-      const dots = document.querySelectorAll(".dot");
+  </div>
+  <script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll(".slide");
+    const dots = document.querySelectorAll(".dot");
 
-      function showSlide(index) {
-        slides.forEach((slide, i) => {
-          slide.classList.toggle("active", i === index);
-          dots[i].classList.toggle("active", i === index);
-        });
-        currentSlide = index;
-      }
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.classList.toggle("active", i === index);
+        dots[i].classList.toggle("active", i === index);
+      });
+      currentSlide = index;
+    }
 
-      function changeSlide(direction) {
-        let newIndex =
-          (currentSlide + direction + slides.length) % slides.length;
-        showSlide(newIndex);
-      }
+    function changeSlide(direction) {
+      let newIndex = (currentSlide + direction + slides.length) % slides.length;
+      showSlide(newIndex);
+    }
 
-      function goToSlide(index) {
-        showSlide(index);
-      }
-    </script>
-  </body>
+    function goToSlide(index) {
+      showSlide(index);
+    }
+  </script>
 </section>
