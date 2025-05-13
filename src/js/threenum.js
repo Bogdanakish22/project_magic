@@ -6,6 +6,10 @@ document.addEventListener('DOMContentLoaded', function () {
     const second = parseFloat(document.getElementById('secondNumber').value);
     const third = parseFloat(document.getElementById('thirdNumber').value);
 
+  if (isNaN(first) || isNaN(second) || isNaN(third)) {
+    document.getElementById('result-text').textContent = 'Введіть усі три числа';
+    return;
+  }
     if (isNaN(first) || isNaN(second) || isNaN(third)) {
       document.getElementById('resultText').textContent = 'Введіть усі три числа';
       return;
@@ -14,6 +18,9 @@ document.addEventListener('DOMContentLoaded', function () {
     const max = Math.max(first, second, third);
     document.getElementById('resultText').textContent = `Найбільше число, яке ви ввели - ${max}`;
   }
+  const max = Math.max(first, second, third);
+  document.getElementById('result-text').textContent = `Найбільше число, яке ви ввели - ${max}`;
+}
 
   document.getElementById('firstNumber').addEventListener('input', updateMaxValue);
   document.getElementById('secondNumber').addEventListener('input', updateMaxValue);
