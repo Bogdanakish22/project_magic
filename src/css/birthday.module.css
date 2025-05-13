@@ -79,8 +79,8 @@
   padding-left: 5px;
   padding-right: 5px;
 }
-.search-btn {
-}
+/* .search-btn {
+} */
 .result-birthday {
   color: #039900;
   text-align: right;
@@ -133,3 +133,6 @@
     padding-top: 36px;
   }
 }
+
+
+
