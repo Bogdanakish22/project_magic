@@ -14,9 +14,9 @@
 @import "css/scientist.module.css";
 @import "css/footer.module.css";
 
- /* main {
+ main {
    background-color: #f3f3f3; 
- }  */
+ } 
 body {
   background-image: url(./img/body.jpg);
   background-repeat: no-repeat;
