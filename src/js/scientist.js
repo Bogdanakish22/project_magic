@@ -46,29 +46,6 @@ const facts = [
     text: "Знайти вченого, який народився найпізніше",
     validate: (s) => s.born === Math.max(...scientists.map((x) => x.born)),
   },
-  {
-    id: 8,
-    text: "Знайти вченого, який прожив найдовше і найменше",
-    validate: (s) => {
-      const ages = scientists.map((x) => x.dead - x.born);
-      const maxAge = Math.max(...ages);
-      const minAge = Math.min(...ages);
-      const age = s.dead - s.born;
-      return age === maxAge || age === minAge;
-    },
-  },
-  {
-    id: 9,
-    text: "Знайти вчених, в яких співпадають перші літери імені і прізвища",
-    validate: (s) => s.name[0] === s.surname[0],
-  },
-  { id: 10, text: "Сума років життя всіх вчених", validate: () => false },
-  { id: 11, text: "Видалити вчених 15-17 ст.", validate: (s) => s.born < 1701 },
-  {
-    id: 12,
-    text: "Чи всі вчені працювали в 19 столітті",
-    validate: () => false,
-  },
 ];
 
 const container = document.getElementById("scientists");
