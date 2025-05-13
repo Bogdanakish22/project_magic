@@ -11,8 +11,8 @@
       rel="stylesheet"
     />
     <title>Vite App</title>
-    <script type="module" crossorigin src="/project_magic/assets/index-CCNv27lV.js"></script>
-    <link rel="stylesheet" crossorigin href="/project_magic/assets/index-HpvEf3Um.css">
+    <script type="module" crossorigin src="/project_magic/assets/index-DkBEMxma.js"></script>
+    <link rel="stylesheet" crossorigin href="/project_magic/assets/index-NJAjCH8P.css">
   </head>
   <body>
     <main>
@@ -34,8 +34,8 @@
         <li><a href="#" data-filter="intro">Ознайомчий</a></li>
       </ul>
     </li>
-    <li>Наша Команда</li>
-    <li>Контакти</li>
+    <li><a href="#team">Наша Команда</a></li>
+  <li><a href="#contacts">Контакти</a></li>
   </ul>
 
   <label class="switch-icon">
@@ -66,10 +66,11 @@
 <nav class="side-menu" id="sideMenu">
   <button class="close-btn" id="closeBtn">&times;</button>
   <ul class="menu-links mobile-nav">
-    <li>Інтерактив</li>
-    <li>Наша Команда</li>
-    <li>Контакти</li>
-  </ul>
+  <li><a href="#">Інтерактив</a></li>
+  <li><a href="#team">Наша Команда</a></li>
+  <li><a href="#contacts">Контакти</a></li>
+</ul>
+
   <div class="contacts">
     <p>Тел: +38 (123) 456 78 90</p>
     <p>E-Mail: codingmagic@gmail.com</p>
@@ -102,7 +103,10 @@
     <button id="saveNameBtn">Зберегти</button>
   </div>
 </div>
-  <section class="birthday container" data-type="numeric">
+
+
+
+<!-- modal -->  <section class="birthday container" data-type="numeric">
   <h1 class="main-title">Популярні інтерактивні ігри</h1>
   <div class="line-box">
     <hr class="line" />
@@ -304,7 +308,7 @@
     <hr class="line" />
   </div>
 </section>
- <section class="team" data-type="intro">
+ <section class="team" data-type="intro" id="team">
   <style>
     .line-wrapper {
       width: 100%;
@@ -525,7 +529,7 @@
   <div class="grid" id="scientists"></div>
   <div class="grid1" id="facts"></div>
 </section>
- <footer class="footer container">
+ <footer class="footer container" id="contacts">
   <div class="all-hui">
     <div>
       <svg class="footer-logo">
