@@ -8,7 +8,6 @@
 }
 
 .title-threenum {
-  color: #000;
   font-family: "Montserrat Alternates";
   font-size: 14px;
   font-style: normal;
@@ -65,7 +64,6 @@
 .result-text {
   margin-top: 45px;
   text-align: center;
-  color: #000;
   font-family: "Montserrat Alternates";
   font-size: 12px;
   font-style: normal;
@@ -74,41 +72,40 @@
 }
 
 @media screen and (min-width: 768px) {
-    .title-threenum {
-      font-size: 16px;
-      margin-bottom: 28px;
-    }
-  
-    .three-input-container {
-      flex-direction: row;
-    }
-  
-    .three-input-container input {
-      width: 120px;
-      font-size: 12px;
-    }
-  
-    .line {
-      width: 400px;
-    }
+  .title-threenum {
+    font-size: 16px;
+    margin-bottom: 28px;
   }
-  
-  @media screen and (min-width: 1024px) {
-    .title-threenum {
-      font-size: 18px;
-    }
-  
-    .three-input-container input {
-      width: 140px;
-      padding: 10px 16px;
-    }
-  
-    .result-text {
-      font-size: 14px;
-    }
-  
-    .line {
-      width: 600px;
-    }
+
+  .three-input-container {
+    flex-direction: row;
   }
-  
+
+  .three-input-container input {
+    width: 120px;
+    font-size: 12px;
+  }
+
+  .line {
+    width: 400px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .title-threenum {
+    font-size: 18px;
+  }
+
+  .three-input-container input {
+    width: 140px;
+    padding: 10px 16px;
+  }
+
+  .result-text {
+    font-size: 14px;
+  }
+
+  .line {
+    width: 600px;
+  }
+}

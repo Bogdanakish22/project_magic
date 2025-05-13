@@ -7,12 +7,12 @@ function updateMaxValue() {
   const third = parseFloat(document.getElementById('thirdNumber').value);
 
   if (isNaN(first) || isNaN(second) || isNaN(third)) {
-    document.getElementById('resultText').textContent = 'Введіть усі три числа';
+    document.getElementById('result-text').textContent = 'Введіть усі три числа';
     return;
   }
 
   const max = Math.max(first, second, third);
-  document.getElementById('resultText').textContent = `Найбільше число, яке ви ввели - ${max}`;
+  document.getElementById('result-text').textContent = `Найбільше число, яке ви ввели - ${max}`;
 }
 
 document.getElementById('firstNumber').addEventListener('input', updateMaxValue);
