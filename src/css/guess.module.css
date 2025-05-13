@@ -92,3 +92,13 @@
     padding-top: 36px;
   }
 }
+
+
+.contacts {
+  text-align: left;
+}
+
+.contacts p,
+.socials {
+  padding-left: 10px;
+}
