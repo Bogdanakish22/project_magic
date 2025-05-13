@@ -84,3 +84,49 @@ saveBtn.addEventListener('click', () => {
     themeToggle.checked = document.body.classList.contains('dark-theme');
   });
   
+
+// drop
+//   const dropdownItems = document.querySelectorAll('.dropdown-menu li a');
+// const gameSections = document.querySelectorAll('.game-section');
+
+// dropdownItems.forEach(item => {
+//   item.addEventListener('click', (e) => {
+//     e.preventDefault();
+
+//     const text = item.textContent.trim();
+
+//     let selectedType = '';
+//     switch (text) {
+//       case 'Числовий':
+//         selectedType = 'numeric';
+//         break;
+//       case 'Графічний':
+//         selectedType = 'graphic';
+//         break;
+//       case 'Ознайомчий':
+//         selectedType = 'intro';
+//         break;
+//     }
+
+//     gameSections.forEach(section => {
+//       const sectionType = section.getAttribute('data-type');
+//       section.style.display = (sectionType === selectedType) ? 'block' : 'none';
+//     });
+//   });
+// });
+
+
+const filterLinks = document.querySelectorAll('.dropdown-menu a');
+const sections = document.querySelectorAll('[data-type]');
+
+filterLinks.forEach(link => {
+  link.addEventListener('click', e => {
+    e.preventDefault();
+
+    const selectedType = link.dataset.filter;
+
+    sections.forEach(section => {
+      section.style.display = section.dataset.type === selectedType ? 'block' : 'none';
+    });
+  });
+});

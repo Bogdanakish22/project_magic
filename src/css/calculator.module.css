@@ -4,6 +4,9 @@
   align-items: center;
 }
 
+
+
+
 .calculator-title {
   font-family: "Montserrat Alternates";
   font-size: 14px;
@@ -55,7 +58,8 @@
 @media screen and (min-width: 768px) {
   .calculator-title {
     font-size: 18px;
-    display: flex;
+    /* display: flex; */
+    display: block;
   }
   .calculator-input {
     width: 135px;
@@ -103,3 +107,38 @@
     width: 100px;
   }
 }
+
+
+
+
+
+/* test */
+
+.calculator-section {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+.calculator-main-box {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center;
+  gap: 10px;
+}
+
+
+
+
+.calculator-title {
+  text-align: center;
+  width: 100%;
+}
+
+
